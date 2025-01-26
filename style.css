@@ -3,4 +3,5 @@ body {
   padding: 0;
   background-color: #777;
   height: 100vh;
+  box-sizing: border-box;
 }
