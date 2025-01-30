@@ -1,5 +1,8 @@
 import { NavLink, Link } from "react-router-dom";
-
+//react-icons
+import { BiSolidMessageCheck } from "react-icons/bi";
+import { FaDownload } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { TiShoppingBag } from "react-icons/ti";
@@ -109,17 +112,52 @@ function Home() {
           </Link>
         </div>
 
-        <div className="contact-card rounded-lg py-4 px-2 flex flex-col">
-          <div className="contact-phone flex w-full">
+        <div className="contact-card rounded-lg py-6 px-4 flex gap-7 flex-col w-full ">
+          <div className="contact-phone flex w-full pb-2">
             <div className="phone-icon w-[30%] flex justify-start items-center">
-              <span className="bg-black w-9 h-9 rounded-lg inline-flex justify-center items-center text-red-500">
-                <FaPhoneAlt className="w-5 h-5" />
+              <span className="group bg-black w-9 h-9 rounded-lg inline-flex justify-center items-center text-red-500">
+                <FaPhoneAlt className="w-5 h-5 group-hover:scale-110 transition-all duration-150" />
               </span>
             </div>
             <div className="phone-data flex flex-col">
-              <p className="">Phone</p>
+              <p className="text-sm text-gray-200">Phone</p>
+              <p className="text-gray-100 font-semibold">+998 91 699 94 98</p>
             </div>
           </div>
+
+          <div className="contact-phone flex w-full pb-2">
+            <div className="phone-icon w-[30%] flex justify-start items-center">
+              <span className="group bg-black w-9 h-9 rounded-lg inline-flex justify-center items-center text-green-500">
+                <BiSolidMessageCheck className="w-5 h-5 group-hover:scale-110 transition-all duration-150" />
+              </span>
+            </div>
+            <div className="phone-data flex flex-col">
+              <p className="text-sm text-gray-200">Email</p>
+              <p className="text-gray-100 font-semibold">
+                jonibektanks@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div className="contact-phone flex w-full pb-2">
+            <div className="phone-icon w-[30%] flex justify-start items-center ">
+              <span className="group  bg-black w-9 h-9 rounded-lg inline-flex justify-center items-center text-purple-500 ">
+                <FaLocationDot className="w-5 h-5 group-hover:scale-110 transition-all duration-150" />
+              </span>
+            </div>
+            <div className="phone-data flex flex-col">
+              <p className="text-sm text-gray-200">Location</p>
+              <p className="text-gray-100 font-semibold">Ferghana UZB</p>
+            </div>
+          </div>
+        </div>
+        <div className="cv-button">
+          <button className="text-white text-sm flex items-center gap-2 bg-red-500 py-3 px-8 rounded-full hover:bg-red-400 transition-all duration-200">
+            <span>
+              <FaDownload />
+            </span>
+            Download CV
+          </button>
         </div>
       </section>
     </div>
