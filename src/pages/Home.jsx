@@ -21,7 +21,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   }, []);
   const handleDarkMode = () => {
     document.body.classList.toggle("light-mode");
