@@ -154,7 +154,7 @@ function Home() {
           <h1 className="text-slate-300 text-xl sm:text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 font-bold text-center">
             Skills
           </h1>
-          <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-3 sm:gap-1 lg:py-4 xl:py-6 lg:px-2 xl:px-10 lg:gap-3 xl:gap-4">
+          <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-3 sm:gap-1 lg:py-4 xl:py-6 lg:px-2 xl:px-7 lg:gap-3 xl:gap-4">
             <img className="skill-images" src="./html.png" alt="" />
             <img className="skill-images" src="./css.png" alt="" />
             <img className="skill-images" src="./js.png" alt="" />
