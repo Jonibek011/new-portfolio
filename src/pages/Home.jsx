@@ -15,12 +15,21 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 
 import { FaPhoneAlt } from "react-icons/fa";
-
+//aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  const handleDarkMode = () => {
+    document.body.classList.toggle("light-mode");
+  };
   return (
     <div className="home relative px-[5%] w-full  flex flex-col  lg:flex-row justify-items-center lg:gap-5 xl:gap-20">
       <span className="load-span absolute top-0 left-0 z-50 inline-block w-full h-[50vh] bg-black "></span>
-      <span className="load-span2 absolute top-[50vh] right-0 z-50 inline-block w-full h-[50vh] bg-black "></span>
+      <span className="load-span2 absolute top-[50vh] right-0 z-50 inline-block w-full h-[100vh] bg-black "></span>
 
       {/* ============= HEADER ========================================== */}
       <header className="header-css">
@@ -52,6 +61,14 @@ function Home() {
           DevPro.
         </Link>
         <div className="flex items-center gap-2 sm:gap-5 text-white cursor-pointer ">
+          <label className="flex cursor-pointer gap-2">
+            <input
+              onChange={handleDarkMode}
+              type="checkbox"
+              value="synthwave"
+              className="toggle theme-controller"
+            />
+          </label>
           <Link className="upper-links">
             <FaLinkedinIn />
           </Link>
@@ -68,14 +85,15 @@ function Home() {
       </section>
       {/* =================================================================================== */}
       <section className="px-2 home-section relative   mt-20 items-center flex flex-col gap-5 md:px-10  lg:px-5 xl:px-10 py-10 rounded-xl w-full h-auto lg:w-[35%] ">
-        <div className="w-44 h-44 md:w-52 md:h-52 lg:w-48 lg:h-48 xl:w-56 xl:h-56  rounded-full outline-dashed outline-4 outline-offset-4  outline-blue-500 overflow-hidden ">
+        <div className="relative w-44 h-44 md:w-52 md:h-52 lg:w-48 lg:h-48 xl:w-56 xl:h-56  rounded-full   ">
+          <span className="absolute circle-span  inline-block rounded-full top-0 left-0 right-0 bottom-0 outline-dashed outline-4 outline-offset-4  outline-blue-500"></span>
           <img
             src="./photo1.jpg"
             alt="photo.jpg"
-            className="w-full mx-auto  "
+            className="w-full h-full mx-auto rounded-full  "
           />
         </div>
-        <h1 className="text-gray-100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-3xl text-center ">
+        <h1 className=" font-bold text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-3xl text-center ">
           Orifjonov Jonibek
         </h1>
         <h1 className="text-center">
@@ -107,8 +125,8 @@ function Home() {
               </span>
             </div>
             <div className="phone-data flex flex-col">
-              <p className="text-sm text-gray-200">Phone</p>
-              <p className="text-gray-100 font-semibold text-sm sm:text-md">
+              <p className="text-sm ">Phone</p>
+              <p className=" font-semibold text-sm sm:text-md">
                 +998 91 699 94 98
               </p>
             </div>
@@ -121,8 +139,8 @@ function Home() {
               </span>
             </div>
             <div className="phone-data flex flex-col">
-              <p className="text-sm text-gray-200">Email</p>
-              <p className="text-gray-100 font-semibold text-[12px] lg:text-[12px] xl:text-[16px]">
+              <p className="text-sm ">Email</p>
+              <p className=" font-semibold text-[12px] lg:text-[12px] xl:text-[16px]">
                 jonibektanks@gmail.com
               </p>
             </div>
@@ -135,10 +153,8 @@ function Home() {
               </span>
             </div>
             <div className="phone-data flex flex-col">
-              <p className="text-sm text-gray-200">Location</p>
-              <p className="text-gray-100 font-semibold text-sm sm:text-md">
-                Ferghana UZB
-              </p>
+              <p className="text-sm ">Location</p>
+              <p className=" font-semibold text-sm sm:text-md">Ferghana UZB</p>
             </div>
           </div>
         </div>
@@ -151,7 +167,7 @@ function Home() {
           </button>
         </div>
         <div className="skill-card sm:w-[70%]   w-full h-[30vh] md:w-[70%] md:h-[30vh] lg:w-[22vw]  rounded-xl py-5 px-8 border-2 ">
-          <h1 className="text-slate-300 text-xl sm:text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 font-bold text-center">
+          <h1 className=" text-xl sm:text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 font-bold text-center">
             Skills
           </h1>
           <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-3 sm:gap-1 lg:py-4 xl:py-6 lg:px-2 xl:px-7 lg:gap-3 xl:gap-4">
@@ -190,7 +206,13 @@ function Home() {
           What I do !!!
         </h1>
         <div className="cards w-full grid grid-cols-1 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2 gap-5">
-          <div className="about-card ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md text-center sm:text-start">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="1100"
+            className="about-card ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md text-center sm:text-start"
+          >
             <dic className="icon-div  w-full sm:w-16 lg:w-16 xl:w-20 ">
               <VscTerminalTmux className="text-purple-400 w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
@@ -205,7 +227,14 @@ function Home() {
             </div>
           </div>
           {/* ======================================================================================= */}
-          <div className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="1500"
+            className="about-card text-center sm:text-start ui-card flex
+            flex-col sm:flex-row gap-4 p-4 rounded-md"
+          >
             <dic className="icon-div lg:w-16 xl:w-20 ">
               <FaAppStore className="text-yellow-500 w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
@@ -220,7 +249,13 @@ function Home() {
             </div>
           </div>
           {/* ================================================================================== */}
-          <div className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="1900"
+            className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md"
+          >
             <dic className="icon-div lg:w-16 xl:w-20 ">
               <LiaToolsSolid className="text-pink-400  w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
@@ -235,7 +270,13 @@ function Home() {
             </div>
           </div>
           {/* ======================================================================== */}
-          <div className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="2300"
+            className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md"
+          >
             <dic className="icon-div lg:w-16 xl:w-20 ">
               <IoCodeSlash className="text-blue-500  w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>

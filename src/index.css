@@ -12,9 +12,40 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --home-color: #2f192e;
+  --header-color: rgb(225, 225, 225);
+  --shadow: 0 0 7px 0 rgb(23, 23, 23);
+  --gray-text: rgb(102, 102, 102);
+  --dark-bg: #111;
+  --normal-text: rgb(237, 237, 237);
+}
+
+h1 {
+  color: var(--header-color);
+}
+
+p {
+  color: var(--normal-text);
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.home-section,
+.about {
+  box-shadow: var(--shadow);
+}
+
+.light-mode {
+  --home-color: #fefbf6;
+  --header-color: #111;
+  --shadow: 0 0 7px 0 rgb(210, 210, 210);
+  --gray-text: rgb(99, 99, 99);
+  --dark-bg: white;
+  --normal-text: rgb(34, 26, 26);
 }
 
 .root {
@@ -27,7 +58,7 @@ body {
 
 .home {
   /* background: linear-gradient(145deg, rgb(83, 83, 83), black 90%); */
-  background: #2f192e;
+  background: var(--home-color);
   width: 100%;
   height: auto;
   overflow: auto;
@@ -118,6 +149,19 @@ nav a:hover {
   }
 }
 
+.circle-span {
+  animation: circle 25s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .skill-card {
   background-color: #111;
   animation: skill-anime 5s ease-in-out infinite;
@@ -187,7 +231,7 @@ nav a:hover {
 }
 
 .home-section {
-  background: #111;
+  background: var(--dark-bg);
   backdrop-filter: blur(5px);
   z-index: 0;
 }
@@ -195,7 +239,7 @@ nav a:hover {
 .profession {
   display: inline-block;
   background-color: rgba(117, 117, 117, 0.164);
-  color: rgb(199, 199, 199);
+  color: var(--normal-text);
 }
 
 .upper-links,
@@ -208,7 +252,7 @@ nav a:hover {
 
 /*About section*/
 .about {
-  background-color: #111;
+  background-color: var(--dark-bg);
   position: relative;
   border-radius: 10px;
   padding-inline: 40px;
@@ -223,7 +267,7 @@ nav a:hover {
 }
 
 .about-title {
-  color: white;
+  color: var(--header-color);
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -240,7 +284,7 @@ nav a:hover {
 }
 
 .about-text {
-  color: rgb(102, 102, 102);
+  color: var(--gray-text);
 }
 
 .about-card {
