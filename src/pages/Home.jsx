@@ -211,7 +211,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="1100"
             className="about-card ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md text-center sm:text-start"
           >
@@ -232,7 +232,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="1500"
             className="about-card text-center sm:text-start ui-card flex
             flex-col sm:flex-row gap-4 p-4 rounded-md"
@@ -254,7 +254,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="1900"
             className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md"
           >
@@ -275,7 +275,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-delay="2300"
             className="about-card text-center sm:text-start ui-card flex flex-col sm:flex-row gap-4 p-4 rounded-md"
           >
