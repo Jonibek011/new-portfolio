@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="home relative px-[5%] w-full  flex flex-col  lg:flex-row justify-items-center lg:gap-5 xl:gap-20">
       <span className="load-span absolute top-0 left-0 z-50 inline-block w-full h-[50vh] bg-black "></span>
-      <span className="load-span2 absolute bottom-0 right-0 z-50 inline-block w-full h-[50vh] bg-black "></span>
+      <span className="load-span2 absolute top-[50vh] right-0 z-50 inline-block w-full h-[50vh] bg-black "></span>
 
       {/* ============= HEADER ========================================== */}
       <header className="header-css">
