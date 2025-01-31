@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-  --home-color: #2f192e;
+  --home-color: #1b1b1b;
   --header-color: rgb(225, 225, 225);
   --shadow: 0 0 7px 0 rgb(23, 23, 23);
   --gray-text: rgb(102, 102, 102);
@@ -232,7 +232,7 @@ nav a:hover {
 
 .home-section {
   background: var(--dark-bg);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   z-index: 0;
 }
 
@@ -252,12 +252,31 @@ nav a:hover {
 
 /*About section*/
 .about {
+  /* background-image: url("../public/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
   background-color: var(--dark-bg);
   position: relative;
   border-radius: 10px;
   padding-inline: 40px;
   padding-block: 50px;
 }
+/* .home-section {
+  background-image: url("../public/bg-steps-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .home {
+  background-image: url("../public/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* .contact-card {
+  background-image: url("../public/bg-quality.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 @media only screen and (min-width: 1024px) {
   .about {
