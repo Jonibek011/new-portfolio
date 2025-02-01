@@ -204,7 +204,7 @@ function Home() {
             companies.
           </p>
         </div>
-        <h1 className="card-title text-white text-2xl text-center sm:text-start md:text-3xl lg:text-xl xl:text-2xl font-semibold">
+        <h1 className="card-title  text-2xl text-center sm:text-start md:text-3xl lg:text-xl xl:text-2xl font-semibold">
           What I do !!!
         </h1>
         <div className="cards w-full grid grid-cols-1 grid-rows-4 sm:grid-rows-2 sm:grid-cols-2 gap-5">
@@ -219,7 +219,7 @@ function Home() {
               <VscTerminalTmux className="text-purple-400 w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
             <div className="card-info flex flex-col gap-4  pb-8">
-              <h1 className="card-title text-white text-xl md:text-2xl lg:text-xl xl:text-2xl">
+              <h1 className="card-title  flex justify-center items-center sm:block  text-xl md:text-2xl lg:text-xl xl:text-2xl">
                 UI/UX Designer
               </h1>
               <p className="about-text text-sm sm:text-md lg:pe-5 xl:pe-10 ">
@@ -241,7 +241,7 @@ function Home() {
               <FaAppStore className="text-yellow-500 w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
             <div className="card-info flex flex-col gap-4  pb-8">
-              <h1 className="card-title text-white text-xl md:text-2xl lg:text-xl xl:text-2xl">
+              <h1 className="card-title flex justify-center items-center sm:block text-xl md:text-2xl lg:text-xl xl:text-2xl">
                 App Development
               </h1>
               <p className="about-text text-sm sm:text-md lg:pe-5 xl:pe-10 ">
@@ -262,7 +262,7 @@ function Home() {
               <LiaToolsSolid className="text-pink-400  w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
             <div className="card-info flex flex-col gap-4  pb-8">
-              <h1 className="card-title text-white text-xl md:text-2xl lg:text-xl xl:text-2xl">
+              <h1 className="card-title flex justify-center items-center sm:block  text-xl md:text-2xl lg:text-xl xl:text-2xl">
                 API development
               </h1>
               <p className="about-text text-sm sm:text-md lg:pe-5 xl:pe-10 ">
@@ -283,7 +283,7 @@ function Home() {
               <IoCodeSlash className="text-blue-500  w-10 h-10 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-10 xl:w-14 lg:h-10 xl:h-14 mx-auto sm:mx-0" />
             </dic>
             <div className="card-info flex flex-col gap-4  pb-8">
-              <h1 className="card-title text-white text-xl md:text-2xl lg:text-xl xl:text-2xl">
+              <h1 className="card-title  flex justify-center items-center sm:block text-xl md:text-2xl lg:text-xl xl:text-2xl">
                 Web Development
               </h1>
               <p className="about-text text-sm sm:text-md lg:pe-5 xl:pe-10 ">
