@@ -41,11 +41,6 @@ function Home() {
             <IoHomeOutline />
           </NavLink>
 
-          {/* <NavLink to="/about" className="relative group">
-            <span className="navLinkSpan">About</span>
-            <FaRegUser />
-          </NavLink> */}
-
           <NavLink to="/portfolio" className="relative group">
             <span className="navLinkSpan">Portfolio</span>
             <TiShoppingBag className="text-2xl" />
@@ -105,13 +100,25 @@ function Home() {
         </h1>
 
         <div className="flex items-center gap-3 sm::gap-5 text-white cursor-pointer ">
-          <Link className="upper-links ">
+          <Link
+            to="http://linkedin.com/in/jonibek-orifjonov-5281182aa"
+            target="_blank"
+            className="upper-links "
+          >
             <FaLinkedinIn className="text-indigo-400" />
           </Link>
-          <Link className="upper-links">
+          <Link
+            to="https://t.me/Janobx11"
+            target="_blank"
+            className="upper-links"
+          >
             <FaTelegramPlane className="text-sky-500" />
           </Link>
-          <Link className="upper-links">
+          <Link
+            to="https://www.facebook.com/jonibek.orifjonov"
+            target="_blank"
+            className="upper-links"
+          >
             <FaFacebookF className="text-orange-700" />
           </Link>
           <Link className="upper-links">
@@ -161,12 +168,14 @@ function Home() {
           </div>
         </div>
         <div className="cv-button">
-          <button className="text-white text-sm flex items-center gap-2 bg-red-500 py-3 px-8 rounded-full hover:bg-red-400 transition-all duration-200">
-            <span>
-              <FaDownload />
-            </span>
-            Download CV
-          </button>
+          <a href="/My Resume.pdf" download="Jonibek_resume.pdf">
+            <button className="text-white text-sm flex items-center gap-2 bg-red-500 py-3 px-8 rounded-full hover:bg-red-400 transition-all duration-200">
+              <span>
+                <FaDownload />
+              </span>
+              Download CV
+            </button>
+          </a>
         </div>
         <div className="skill-card sm:w-[70%]   w-full h-[30vh] md:w-[70%] md:h-[30vh] lg:w-[22vw]  rounded-xl py-5 px-8 border-2 ">
           <h1 className=" text-xl sm:text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 font-bold text-center">

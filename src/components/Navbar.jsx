@@ -39,20 +39,19 @@ function Navbar() {
         </ul>
       </header2> */}
       <header className="header-css">
-        <nav className="flex md:flex-col md:items-center gap-4  px-6 py-3 rounded-xl md:rounded-full w-[80%] justify-evenly ">
-          <NavLink to="/">
+        <nav className=" fixed bottom-5 flex z-50 left-[50%] w-[250px]  items-center justify-center gap-4 py-2 rounded-full  translate-x-[-50%] bg-[#54545434] ">
+          <NavLink to="/" className="relative group">
+            <span className="navLinkSpan">Home</span>
             <IoHomeOutline />
           </NavLink>
 
-          <NavLink to="/about">
-            <FaRegUser />
-          </NavLink>
-
-          <NavLink to="/portfolio">
+          <NavLink to="/portfolio" className="relative group">
+            <span className="navLinkSpan">Portfolio</span>
             <TiShoppingBag className="text-2xl" />
           </NavLink>
 
-          <NavLink to="/contact">
+          <NavLink to="/contact" className="relative group">
+            <span className="navLinkSpan">Contact</span>
             <MdOutlinePermContactCalendar className="text-2xl" />
           </NavLink>
         </nav>
