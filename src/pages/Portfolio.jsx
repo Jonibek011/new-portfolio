@@ -1,8 +1,7 @@
-
+import { balloons } from "balloons-js";
 function Portfolio() {
-  return (
-    <div>Portfolio</div>
-  )
+  balloons();
+  return <div>Portfolio</div>;
 }
 
-export default Portfolio
+export default Portfolio;

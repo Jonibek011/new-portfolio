@@ -19,7 +19,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+import { balloons } from "balloons-js";
+
 function Home() {
+  const handleBalloon = () => {
+    balloons();
+  };
   useEffect(() => {
     AOS.init({
       once: true,
@@ -169,7 +175,10 @@ function Home() {
         </div>
         <div className="cv-button">
           <a href="/My Resume.pdf" download="Jonibek_resume.pdf">
-            <button className="text-white text-sm flex items-center gap-2 bg-red-500 py-3 px-8 rounded-full hover:bg-red-400 transition-all duration-200">
+            <button
+              onClick={handleBalloon}
+              className="text-white text-sm flex items-center gap-2 bg-red-500 py-3 px-8 rounded-full hover:bg-red-400 transition-all duration-200"
+            >
               <span>
                 <FaDownload />
               </span>
