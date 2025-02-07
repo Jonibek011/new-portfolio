@@ -21,7 +21,7 @@ body {
   --normal-text: rgb(237, 237, 237);
 }
 
-h1 {
+.home h1 {
   color: var(--header-color);
 }
 
@@ -110,6 +110,9 @@ nav a:hover {
 
   .skill-images {
     @apply w-8;
+  }
+  .portfolios div {
+    @apply hover:scale-105 transition-all duration-300 bg-center bg-cover;
   }
 }
 
@@ -252,31 +255,12 @@ nav a:hover {
 
 /*About section*/
 .about {
-  /* background-image: url("../public/bg-quality.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: var(--dark-bg);
   position: relative;
   border-radius: 10px;
   padding-inline: 40px;
   padding-block: 50px;
 }
-/* .home-section {
-  background-image: url("../public/bg-steps-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* .home {
-  background-image: url("../public/bg-quality.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-/* .contact-card {
-  background-image: url("../public/bg-quality.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 @media only screen and (min-width: 1024px) {
   .about {
@@ -308,4 +292,10 @@ nav a:hover {
 
 .about-card {
   border: 0.2px solid rgb(66, 66, 66);
+}
+
+/*Portfolio*/
+.portfolio {
+  height: 100vh;
+  overflow: auto;
 }

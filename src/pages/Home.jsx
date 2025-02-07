@@ -96,7 +96,7 @@ function Home() {
             className="w-full h-full mx-auto rounded-full  "
           />
         </div>
-        <h1 className=" font-bold text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-3xl text-center ">
+        <h1 className="main-header font-bold text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-3xl text-center ">
           Orifjonov Jonibek
         </h1>
         <h1 className="text-center">
