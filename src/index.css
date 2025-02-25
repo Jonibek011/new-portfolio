@@ -111,7 +111,7 @@ nav a:hover {
   .skill-images {
     @apply w-8;
   }
-  .portfolios div {
+  .portfolios .div {
     @apply hover:scale-105 transition-all duration-300 bg-center bg-cover;
   }
 }
@@ -296,6 +296,6 @@ nav a:hover {
 
 /*Portfolio*/
 .portfolio {
-  height: 100vh;
   overflow: auto;
+  background-color: #111;
 }

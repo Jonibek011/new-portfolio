@@ -2,6 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import Project from "../components/Project";
+
 function Portfolio() {
   useEffect(() => {
     AOS.init({
@@ -9,23 +11,71 @@ function Portfolio() {
       once: true, // Elements will animate once
     });
   }, []);
+
+  const lastWorks = [
+    {
+      url: "https://jonibek-unsplash.netlify.app",
+      bgURL:
+        "https://media1.thehungryjpeg.com/thumbs2/ori_44683_d83059469a5c665d62121b6d6bc115f487e6ea31_portfolio-design.jpg",
+      title: "Unsplash site. You can find out 100 000 pictures",
+    },
+    {
+      url: "https://jonibek-uzum-market-95fa68.netlify.app",
+      bgURL:
+        "https://i.pinimg.com/originals/f5/ff/e4/f5ffe4f0b2b717c3b79c1587db3cf716.jpg",
+      title: "E-commers site. This is copy site from 'Uzum market' in UZB",
+    },
+    {
+      url: "https://zingy-peony-4c47c6.netlify.app",
+      bgURL:
+        "https://media1.thehungryjpeg.com/thumbs2/ori_11510_e30ecd29d4360f4836cf36885c23116900b3c290_creative-portfolio.jpg",
+      title: "Coffee site. You can choose your favourite coffee",
+    },
+    {
+      url: "https://jonibek-dev-portfolio.netlify.app",
+      bgURL:
+        "https://images.examples.com/wp-content/uploads/2017/11/Editable-Graphic-Design-Portfolio.jpg",
+      title: "Portfolio site. In this site you can see my older portfolio",
+    },
+    {
+      url: "https://jonibek-to-do-list.netlify.app",
+      bgURL:
+        "https://www.oso-web.com/wp-content/uploads/2018/04/Image_1-4.jpeg",
+      title: "To do list. This is CRUD project",
+    },
+    {
+      url: "https://user-create1.netlify.app",
+      bgURL:
+        "https://thumbs.dreamstime.com/b/user-profile-icon-abstract-blue-background-illustration-dark-blue-digital-texture-grunge-elegant-paint-modern-design-concept-user-167078251.jpg",
+      title: "In this site you can create your own user",
+    },
+    {
+      url: "https://jonibek-rent-car.netlify.app",
+      bgURL:
+        "https://www.pixelstalk.net/wp-content/uploads/2016/09/Cars-Full-HD-Free-Download-Wallpapers.jpg",
+      title: "Rental car. This site created by copying exist site",
+    },
+    {
+      url: "https://https://jonibek-coffee.netlify.app/",
+      bgURL:
+        "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages5.alphacoders.com%2F343%2Fthumb-1920-343424.jpg&sp=1740467977Tc9f9b48740bb7489e49567a03aab09195fe5412bb28187ef712e7f6f88b656c1",
+      title: "This is a coffee break site",
+    },
+  ];
+
   return (
-    <section className="portfolio w-full h-auto ">
+    <section className="portfolio w-full h-auto">
       <div className="custom-container w-full h-auto px-[3%]">
-        <h1 className="text-4xl font-semibold text-center my-14">Last works</h1>
+        <h1 className="text-4xl font-semibold text-center my-14 text-white">
+          Last works
+        </h1>
         <div className="portfolios   sm:grid sm:grid-cols-2 sm:grid-rows-5 ">
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://media1.thehungryjpeg.com/thumbs2/ori_44683_d83059469a5c665d62121b6d6bc115f487e6ea31_portfolio-design.jpg')] bg-center bg-cover"></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://i.pinimg.com/originals/f5/ff/e4/f5ffe4f0b2b717c3b79c1587db3cf716.jpg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://media1.thehungryjpeg.com/thumbs2/ori_11510_e30ecd29d4360f4836cf36885c23116900b3c290_creative-portfolio.jpg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://images.examples.com/wp-content/uploads/2017/11/Editable-Graphic-Design-Portfolio.jpg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://www.oso-web.com/wp-content/uploads/2018/04/Image_1-4.jpeg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://i.etsystatic.com/34412533/r/il/4d7802/3907612986/il_570xN.3907612986_j6vr.jpg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://media.gettyimages.com/id/1133611435/photo/office-with-white-board.jpg?s=612x612&w=gi&k=20&c=DQ4bjR66DbZ4C3nJxeUg4coYgDyYGO2UdJh26ed7Y6I=')]  ">
-            hello
-          </div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://wallpaperaccess.com/full/5651981.jpg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://www.imtglobalinc.com/wp-content/uploads/2020/07/AdobeStock_164909094-scaled.jpeg')]  "></div>
-          <div className="w-full h-72 lg:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-[url('https://www.imtglobalinc.com/wp-content/uploads/2020/07/AdobeStock_164909094-scaled.jpeg')]  "></div>
+          {/* ========================================================================== */}
+          {lastWorks.map((work) => {
+            return (
+              <Project url={work.url} bgURL={work.bgURL} title={work.title} />
+            );
+          })}
         </div>
       </div>
     </section>
