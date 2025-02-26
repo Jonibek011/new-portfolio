@@ -52,13 +52,12 @@ function Portfolio() {
     {
       url: "https://jonibek-rent-car.netlify.app",
       bgURL:
-        "https://www.pixelstalk.net/wp-content/uploads/2016/09/Cars-Full-HD-Free-Download-Wallpapers.jpg",
+        "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Rental car. This site created by copying exist site",
     },
     {
       url: "https://https://jonibek-coffee.netlify.app/",
-      bgURL:
-        "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages5.alphacoders.com%2F343%2Fthumb-1920-343424.jpg&sp=1740467977Tc9f9b48740bb7489e49567a03aab09195fe5412bb28187ef712e7f6f88b656c1",
+      bgURL: "./proxy-image.jpg",
       title: "This is a coffee break site",
     },
   ];
@@ -73,7 +72,12 @@ function Portfolio() {
           {/* ========================================================================== */}
           {lastWorks.map((work) => {
             return (
-              <Project url={work.url} bgURL={work.bgURL} title={work.title} />
+              <Project
+                key={work.title}
+                url={work.url}
+                bgURL={work.bgURL}
+                title={work.title}
+              />
             );
           })}
         </div>
