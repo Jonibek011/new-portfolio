@@ -56,7 +56,7 @@ function Portfolio() {
       title: "Rental car. This site created by copying exist site",
     },
     {
-      url: "https://https://jonibek-coffee.netlify.app/",
+      url: "https://jonibek-coffee.netlify.app/",
       bgURL: "./proxy-image.jpg",
       title: "This is a coffee break site",
     },
